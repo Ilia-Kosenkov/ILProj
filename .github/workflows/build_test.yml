@@ -14,7 +14,7 @@ on:
 env:
   GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 jobs:
-  build_pack:
+  build_test:
 
     runs-on: ubuntu-latest
     
