@@ -1,6 +1,3 @@
-dotnet pack ../ILTemplates/ILTemplates.csproj -c Release
-dotnet new -i ../ILTemplates/bin/Release/*nupkg
-
 mkdir Tests
 dotnet new ilconsole -o Tests/ILConsole
 dotnet new ilclasslib -o Tests/ILClassLib

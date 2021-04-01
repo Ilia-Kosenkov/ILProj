@@ -1,0 +1,38 @@
+name: Pack and Publish
+
+on:
+  push:
+    branch:
+      - '*'
+    tags-ingore:
+      - 'v*'
+  pull_request:
+    branch:
+      - 'main'
+      - 'master'
+    
+env:
+  GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+jobs:
+  build_pack:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.*
+    - name: Pack library
+      run: dotnet pack ILTemplates/ILTemplates.csproj -c Release -o ./Packed
+
+    - name: Test
+      run: |
+        dotnet new -i ./Packed/*nupkg
+        cd tests
+        ./run_test.ps1
+        cd ..
+      shell: pwsh
