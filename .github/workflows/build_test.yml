@@ -4,13 +4,13 @@ on:
   push:
     branch:
       - '*'
-    tags-ingore:
+    tags-ignore:
       - 'v*'
   pull_request:
     branch:
       - 'main'
       - 'master'
-    tags-ingore:
+    tags-ignore:
       - 'v*'
     
 env:
