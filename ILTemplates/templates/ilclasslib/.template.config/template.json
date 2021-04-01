@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Ilia Kosenkov",
+  "classifications": [ "Library" ], 
+  "name": "IL Class Library",
+  "identity": "IL.Templates.ClassLib",         
+  "groupIdentity":"IL.Templates.Lib",
+  "shortName": "ilclasslib",                   
+  "tags": {
+    "language": "IL",                         
+    "type":"project"
+  },
+  "sourceName": "ILClassLib",
+  "preferNameDirectory":true
+}

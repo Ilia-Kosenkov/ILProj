@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Ilia Kosenkov",
+  "classifications": [ "Console" ], 
+  "name": "IL Console Application",
+  "identity": "IL.Templates.ConsoleApp",         
+  "groupIdentity":"IL.Templates.Exe",
+  "shortName": "ilconsole",                   
+  "tags": {
+    "language": "IL",                         
+    "type":"project"
+  },
+  "sourceName": "ILConsoleApp",
+  "preferNameDirectory":true
+}

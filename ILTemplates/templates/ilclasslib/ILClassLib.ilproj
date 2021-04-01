@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk.IL">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <MicrosoftNetCoreIlasmPackageVersion>5.0.0</MicrosoftNetCoreIlasmPackageVersion>
+  </PropertyGroup>
+</Project>
