@@ -10,6 +10,8 @@ on:
     branch:
       - 'main'
       - 'master'
+    tags-ingore:
+      - 'v*'
     
 env:
   GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
