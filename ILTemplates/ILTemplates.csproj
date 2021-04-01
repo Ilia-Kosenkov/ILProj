@@ -7,7 +7,10 @@
     <Title>IL project templastes</Title>
     <Authors>Ilia Kosenkov</Authors>
     <Description>Templates to use when creating an application for Adatum Corporation.</Description>
+		<RepositoryUrl>https://github.com/Ilia-Kosenkov/ILProj</RepositoryUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageTags>dotnet-new;templates</PackageTags>
+
     <TargetFramework>netstandard2.0</TargetFramework>
 
     <IncludeContentInPack>true</IncludeContentInPack>
